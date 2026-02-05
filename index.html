@@ -1,140 +1,98 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LifeCount – Legal & Support</title>
   <style>
-    :root {
-      --bg: #0f0f10;
-      --panel: #161618;
-      --text: #e6e6e6;
-      --muted: #a0a0a0;
-      --line: #2a2a2e;
-      --accent: #ffffff;
+    :root{
+      --bg:#0f0f10;
+      --panel:#161618;
+      --text:#e6e6e6;
+      --muted:#a0a0a0;
+      --line:#2a2a2e;
+      --accent:#ffffff;
     }
-
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  background: linear-gradient(180deg, #0f0f10, #141416);
-  color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 820px;
-  margin: 0 auto;
-  padding: 56px 20px 80px;
-}
-
-header {
-  margin-bottom: 48px;
-}
-
-h1 {
-  font-size: 2.2rem;
-  margin: 0 0 12px 0;
-  letter-spacing: -0.02em;
-}
-
-.subtitle {
-  color: var(--muted);
-  font-size: 1rem;
-}
-
-nav {
-  margin: 32px 0 48px;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  color: var(--text);
-  text-decoration: none;
-  padding: 8px 14px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  font-size: 0.9rem;
-  transition: background 0.2s ease, border 0.2s ease;
-}
-
-nav a:hover {
-  background: #1f1f22;
-  border-color: #3a3a3f;
-}
-
-section {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 28px 24px;
-  margin-bottom: 32px;
-}
-
-h2 {
-  font-size: 1.4rem;
-  margin-top: 0;
-  margin-bottom: 16px;
-  letter-spacing: -0.01em;
-}
-
-h3 {
-  font-size: 1.05rem;
-  margin-bottom: 8px;
-  margin-top: 24px;
-}
-
-p {
-  margin: 0 0 14px 0;
-  color: var(--text);
-}
-
-ul {
-  margin: 8px 0 16px 20px;
-}
-
-li {
-  margin-bottom: 6px;
-}
-
-.muted {
-  color: var(--muted);
-}
-
-a.link {
-  color: var(--accent);
-  text-decoration: underline;
-  word-break: break-all;
-}
-
-footer {
-  margin-top: 56px;
-  color: var(--muted);
-  font-size: 0.85rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: #f6f6f7;
-    --panel: #ffffff;
-    --text: #1c1c1e;
-    --muted: #6e6e73;
-    --line: #e5e5ea;
-    --accent: #000000;
-  }
-
-  body {
-    background: linear-gradient(180deg, #f6f6f7, #ffffff);
-  }
-}
-```
-
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#0f0f10,#141416);
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      line-height:1.6;
+    }
+    .container{
+      max-width:820px;
+      margin:0 auto;
+      padding:56px 20px 80px;
+    }
+    header{margin-bottom:48px}
+    h1{
+      font-size:2.2rem;
+      margin:0 0 12px 0;
+      letter-spacing:-0.02em;
+    }
+    .subtitle{color:var(--muted);font-size:1rem}
+    nav{
+      margin:32px 0 48px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    nav a{
+      color:var(--text);
+      text-decoration:none;
+      padding:8px 14px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      font-size:0.9rem;
+      transition:background .2s ease,border .2s ease;
+    }
+    nav a:hover{
+      background:#1f1f22;
+      border-color:#3a3a3f;
+    }
+    section{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:28px 24px;
+      margin-bottom:32px;
+    }
+    h2{
+      font-size:1.4rem;
+      margin:0 0 12px 0;
+      letter-spacing:-0.01em;
+    }
+    h3{
+      font-size:1.05rem;
+      margin:22px 0 8px 0;
+    }
+    p{margin:0 0 14px 0}
+    .muted{color:var(--muted)}
+    a.link{
+      color:var(--accent);
+      text-decoration:underline;
+      word-break:break-all;
+    }
+    footer{
+      margin-top:56px;
+      color:var(--muted);
+      font-size:.85rem;
+      text-align:center;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f6f6f7;
+        --panel:#ffffff;
+        --text:#1c1c1e;
+        --muted:#6e6e73;
+        --line:#e5e5ea;
+        --accent:#000000;
+      }
+      body{background:linear-gradient(180deg,#f6f6f7,#ffffff)}
+      nav a:hover{background:#f2f2f3;border-color:#d1d1d6}
+    }
   </style>
 </head>
 <body>
@@ -144,74 +102,71 @@ footer {
       <div class="subtitle">Privacy Policy · Support · Terms of Service</div>
     </header>
 
-```
-<nav>
-  <a href="#privacy">Privacy</a>
-  <a href="#support">Support</a>
-  <a href="#terms">Terms</a>
-</nav>
+    <nav>
+      <a href="#privacy">Privacy</a>
+      <a href="#support">Support</a>
+      <a href="#terms">Terms</a>
+    </nav>
 
-<section id="privacy">
-  <h2>Privacy Policy</h2>
-  <p class="muted">Last updated: February 2026</p>
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p class="muted">Last updated: February 2026</p>
 
-  <p>LifeCount is designed to function without collecting personal data. All information you enter remains on your device and is used only to generate time-based visualizations.</p>
+      <p>LifeCount is designed to function without collecting personal data. All information you enter remains on your device and is used only to generate time-based visualizations.</p>
 
-  <h3>Analytics & Tracking</h3>
-  <p>LifeCount does not use analytics, tracking technologies, or advertising identifiers.</p>
+      <h3>Analytics & Tracking</h3>
+      <p>LifeCount does not use analytics, tracking technologies, or advertising identifiers.</p>
 
-  <h3>In-App Purchases</h3>
-  <p>Optional in-app purchases are processed by Apple. LifeCount does not access or store payment information.</p>
+      <h3>In-App Purchases</h3>
+      <p>Optional in-app purchases are processed by Apple. LifeCount does not access or store payment information.</p>
 
-  <h3>Contact</h3>
-  <p>Questions about privacy may be submitted through the support form:</p>
-  <p><a class="link" href="https://forms.gle/vRWWGxCyiJjvzNkm7" target="_blank">https://forms.gle/vRWWGxCyiJjvzNkm7</a></p>
-</section>
+      <h3>Contact</h3>
+      <p>Questions about privacy may be submitted through the support form:</p>
+      <p><a class="link" href="https://forms.gle/vRWWGxCyiJjvzNkm7" target="_blank" rel="noopener noreferrer">https://forms.gle/vRWWGxCyiJjvzNkm7</a></p>
+    </section>
 
-<section id="support">
-  <h2>Support</h2>
+    <section id="support">
+      <h2>Support</h2>
 
-  <p>LifeCount is a time visualization tool for reflection and planning. Remaining-time values are estimates based on publicly available life expectancy data.</p>
+      <p>LifeCount is a time visualization tool for reflection and planning. Remaining-time values are estimates based on publicly available life expectancy data.</p>
 
-  <h3>Emotional Well-being</h3>
-  <p>If this app brings up difficult feelings, please consider reaching out to trusted people or local professional resources.</p>
-  <p class="muted">In an emergency or crisis, contact your local emergency number.</p>
+      <h3>Emotional Well-being</h3>
+      <p>If this app brings up difficult feelings, please consider reaching out to trusted people or local professional resources.</p>
+      <p class="muted">In an emergency or crisis, contact your local emergency number.</p>
 
-  <h3>Support & Feedback</h3>
-  <p>For questions or feedback, please use the support form:</p>
-  <p><a class="link" href="https://forms.gle/vRWWGxCyiJjvzNkm7" target="_blank">https://forms.gle/vRWWGxCyiJjvzNkm7</a></p>
-  <p class="muted">LifeCount is developed independently. Responses may take time.</p>
-</section>
+      <h3>Support & Feedback</h3>
+      <p>For questions or feedback, please use the support form:</p>
+      <p><a class="link" href="https://forms.gle/vRWWGxCyiJjvzNkm7" target="_blank" rel="noopener noreferrer">https://forms.gle/vRWWGxCyiJjvzNkm7</a></p>
+      <p class="muted">LifeCount is developed independently. Responses may take time.</p>
+    </section>
 
-<section id="terms">
-  <h2>Terms of Service</h2>
-  <p class="muted">Last updated: February 2026</p>
+    <section id="terms">
+      <h2>Terms of Service</h2>
+      <p class="muted">Last updated: February 2026</p>
 
-  <h3>Purpose</h3>
-  <p>LifeCount provides time-based visualizations for informational and reflective use only. All remaining-time values are estimates.</p>
+      <h3>Purpose</h3>
+      <p>LifeCount provides time-based visualizations for informational and reflective use only. All remaining-time values are estimates.</p>
 
-  <h3>No Professional Advice</h3>
-  <p>LifeCount does not provide medical, psychological, legal, or professional advice and does not predict lifespan or outcomes.</p>
+      <h3>No Professional Advice</h3>
+      <p>LifeCount does not provide medical, psychological, legal, or professional advice and does not predict lifespan or outcomes.</p>
 
-  <h3>User Responsibility</h3>
-  <p>You are responsible for how you interpret and use information shown in the app.</p>
+      <h3>User Responsibility</h3>
+      <p>You are responsible for how you interpret and use information shown in the app.</p>
 
-  <h3>In-App Purchases</h3>
-  <p>Subscriptions and lifetime purchases are managed by Apple. Features and availability may change over time.</p>
+      <h3>In-App Purchases</h3>
+      <p>Subscriptions and lifetime purchases are managed by Apple. Features and availability may change over time.</p>
 
-  <h3>Limitation of Liability</h3>
-  <p>To the fullest extent permitted by law, the developer is not liable for damages arising from use of the app.</p>
+      <h3>Limitation of Liability</h3>
+      <p>To the fullest extent permitted by law, the developer is not liable for damages arising from use of the app.</p>
 
-  <h3>Contact</h3>
-  <p>Questions about these Terms may be submitted via the support form:</p>
-  <p><a class="link" href="https://forms.gle/vRWWGxCyiJjvzNkm7" target="_blank">https://forms.gle/vRWWGxCyiJjvzNkm7</a></p>
-</section>
+      <h3>Contact</h3>
+      <p>Questions about these Terms may be submitted via the support form:</p>
+      <p><a class="link" href="https://forms.gle/vRWWGxCyiJjvzNkm7" target="_blank" rel="noopener noreferrer">https://forms.gle/vRWWGxCyiJjvzNkm7</a></p>
+    </section>
 
-<footer>
-  <p>© LifeCount · Independent iOS App</p>
-</footer>
-```
-
+    <footer>
+      <p>© LifeCount · Independent iOS App</p>
+    </footer>
   </div>
 </body>
 </html>
